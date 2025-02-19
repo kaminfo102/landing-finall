@@ -99,7 +99,7 @@ export default function Home() {
       title: "پیام با موفقیت ارسال شد",
       description: "به زودی با شما تماس خواهیم گرفت",
       className: "bg-green-50 dark:bg-green-900 border-green-500",
-      icon: <CheckCircle2 className="h-12 w-12 text-green-500" />,
+      // icon: <CheckCircle2 className="h-12 w-12 text-green-500" />,
     });
 
     setTimeout(() => setShowSuccess(false), 3000);
@@ -110,12 +110,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background geometric-bg">
-      <PromoDialog />
+    {/* // <div className="min-h-screen bg-background geometric-bg flex items-center justify-center p-4 sm:p-6 md:p-8"> */}
+      
       <MainNav />
 
       {/* Hero Section with Sliders */}
-      <section id="hero" className="pt-24 pb-16 px-4">
-        <div className="container mx-auto">
+      <section id="hero" className="pt-24 pb-16 px-4 pr-0 pl-0">
+        <div className="mx-auto m-0">
           <HeroSlider />
         </div>
       </section>
@@ -435,5 +436,6 @@ export default function Home() {
         <ArrowUp className="h-6 w-6" />
       </button>
     </div>
+    
   );
 }

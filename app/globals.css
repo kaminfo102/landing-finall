@@ -75,8 +75,11 @@
   @apply bg-white/70 dark:bg-gray-950/70 backdrop-blur-lg border-b border-white/20 dark:border-white/10;
 }
 
-.section-padding {
+/* .section-padding {
   @apply py-24 px-4 sm:px-6 lg:px-8;
+} */
+.section-padding {
+  @apply py-16 px-4 sm:py-12 lg:py-24 sm:px-6 lg:px-8;
 }
 
 .hero-pattern {
