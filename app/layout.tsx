@@ -28,8 +28,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-background font-vazir antialiased">
         <Providers>
+        <Toaster />
           {children}
-          <Toaster />
+          
         </Providers>
       </body>
     </html>

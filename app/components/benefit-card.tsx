@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Heart, Eye, Share2 } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 interface BenefitCardProps {
   icon: React.ElementType;
@@ -13,6 +14,7 @@ interface BenefitCardProps {
   views: number;
   likes: number;
 }
+
 
 export function BenefitCard({ icon: Icon, title, description, image, views, likes }: BenefitCardProps) {
   const [liked, setLiked] = useState(false);
@@ -69,9 +71,19 @@ export function BenefitCard({ icon: Icon, title, description, image, views, like
           </button>
         </div>
         
-        <Button className="w-full glow-button">
+         <Button className="w-full glow-button" onClick={()=>
+         <Link 
+         href={`/articles/`}
+         className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+>
+ 
+</Link> 
+
+         }>
           بیشتر بدانید
         </Button>
+        
+        
       </div>
     </motion.div>
   );

@@ -38,30 +38,39 @@ const kurdistanCities = [
   'سروآباد'
 ];
 
-const benefits = [
+export const   benefits = [
   {
+    id: 1,
     icon: Lightbulb,
     title: 'تقویت حافظه',
     description: 'افزایش قدرت حافظه و تمرکز با تمرینات منظم و روش‌های علمی',
     image: 'https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&q=80',
     views: 1234,
     likes: 89,
+    excerpt: "کاوش در اصول طراحی معاصر و تأثیر آن بر مناظر شهری...",
+    slug: "a1"  
+      
+      
   },
   {
+    id: 2,
     icon: Target,
     title: 'دقت بالا',
     description: 'پرورش دقت و سرعت عمل در محاسبات با تکنیک‌های پیشرفته',
     image: 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&q=80',
     views: 987,
     likes: 76,
+    slug: "a2"
   },
   {
+    id: 3,
     icon: Zap,
     title: 'تفکر خلاق',
     description: 'پرورش خلاقیت و مهارت‌های حل مسئله با روش‌های نوین',
     image: 'https://images.unsplash.com/photo-1492551557933-34265f7af79e?auto=format&fit=crop&q=80',
     views: 2156,
     likes: 143,
+    slug: "a3"
   },
 ];
 
@@ -136,7 +145,7 @@ export default function Home() {
               <Calendar className="h-16 w-16 text-primary" />
             </div>
             <h3 className="text-xl font-bold mt-6 mb-2">تاریخ برگزاری</h3>
-            <p className="text-muted-foreground">۱۵ فروردین ۱۴۰۳</p>
+            <p className="text-muted-foreground">16 و 17 اسفند ۱۴۰۳</p>
           </motion.div>
 
           <motion.div
@@ -146,7 +155,7 @@ export default function Home() {
               <Users className="h-16 w-16 text-primary" />
             </div>
             <h3 className="text-xl font-bold mt-6 mb-2">رده‌های سنی</h3>
-            <p className="text-muted-foreground">۷ تا ۱۵ سال</p>
+            <p className="text-muted-foreground">کلیه رده ها سنی</p>
           </motion.div>
 
           <motion.div
@@ -156,9 +165,71 @@ export default function Home() {
               <Trophy className="h-16 w-16 text-primary" />
             </div>
             <h3 className="text-xl font-bold mt-6 mb-2">جوایز نفیس</h3>
-            <p className="text-muted-foreground">بیش از ۵۰ میلیون تومان</p>
+            <p className="text-muted-foreground">5 نابغه برتر استان</p>
           </motion.div>
         </motion.div>
+      </section>
+
+       {/* FAQ Section */}
+       <section id="faq" className="section-padding">
+        <div className="container mx-auto">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            className="text-3xl font-bold text-center mb-12"
+          >
+            سوالات متداول
+          </motion.h2>
+          <Accordion
+            type="single"
+            collapsible
+            className={`w-full max-w-2xl mx-auto ${cardStyle} rounded-2xl p-4`}
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger>شرایط شرکت در مسابقه چیست؟</AccordionTrigger>
+              <AccordionContent>
+                <p className="mb-4">
+                  همه فراگیران در هر رده سنی و ترمی که هستند می‌توانند در این مسابقه شرکت کنند.
+                  
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li> تکمیل فرم ثبت‌نام آنلاین</li>
+                  <li>تماس موسسه با شما جهت اخذ اطلعات تکمیلی ، تعیین سطح و ترم آزمون و راهنمایی های لازم</li>
+                  <li>پیوستن به کانال مربوط به مسابقه و دریافت نمونه سوالات و تمرین</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>نحوه برگزاری مسابقه چگونه است؟</AccordionTrigger>
+              <AccordionContent>
+                <p className="mb-4">
+                  مسابقه به صورت آنلاین برگزار می شود:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>بسته به ترم و سطح فراگیر سوالات هر فراگیر متفاوت است</li>
+                  <li>بلافاصله بعد از نهایی کردن پاسخنامه امتیاز فراگیر مشخص خواهد شد.</li>
+                  <li>فراگیرانی که امتیاز یکسانی داشته باشند با برگزاری دوم نفرات برتر مشخص خواهد شد </li>
+                  <li>امتیاز کلیه فراگیران در پایان مسابقه در سایت درج خواهد شد </li>
+                  <li>امتیاز فراگیر کاملا توسط برنامه محاسبه شده و بلافاصله نمایش داده می شود و هیچگونه دخالت دستی در آن امکان پذیر نخواهد بود </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>هزینه ثبت‌نام چقدر است؟</AccordionTrigger>
+              <AccordionContent>
+                <p className="mb-4">
+                  هزینه ثبت‌نام 95000 هزار تومان می‌باشد:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  {/* <li>شرکت در مرحله مقدماتی</li>
+                  <li>دسترسی به منابع آموزشی آنلاین</li>
+                  <li>در صورت موفقیت، شرکت در مرحله نهایی</li>
+                  <li>گواهی شرکت در مسابقه</li> */}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
 
       {/* Benefits Section */}
@@ -205,7 +276,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section
       <section id="faq" className="section-padding">
         <div className="container mx-auto">
           <motion.h2
@@ -262,7 +333,7 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="section-padding">
@@ -289,7 +360,8 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold mb-1">تلفن تماس</h3>
                   <a href="tel:+989123456789" className="text-muted-foreground">
-                    ۰۹۱۲۳۴۵۶۷۸۹
+                  ۰۹۳۳۳۲۹۵۶۰۱
+                  
                   </a>
                 </div>
               </motion.div>
@@ -301,7 +373,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold mb-1">ایمیل</h3>
                   <a href="mailto:info@example.com" className="text-muted-foreground">
-                    info@example.com
+                    info.kurdskids@gmail.com
                   </a>
                 </div>
               </motion.div>
@@ -313,7 +385,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold mb-1">واتساپ</h3>
                   <a href="https://wa.me/989123456789" className="text-muted-foreground">
-                    ۰۹۱۲۳۴۵۶۷۸۹
+                  ۰۹۳۳۳۲۹۵۶۰۱
                   </a>
                 </div>
               </motion.div>

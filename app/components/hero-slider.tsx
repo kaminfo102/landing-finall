@@ -10,12 +10,13 @@ const slides = [
   {
     title: 'تقویت مهارت‌های ریاضی',
     description: 'با شرکت در مسابقات محاسبات ذهنی، مهارت‌های ریاضی خود را تقویت کنید',
-    image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80',
+    // image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80',
+    image: '/images/sliders/1.jpg',
   },
   {
     title: 'رقابت سالم و هیجان‌انگیز',
     description: 'در فضایی دوستانه و رقابتی، استعدادهای خود را شکوفا کنید',
-    image: 'https://images.unsplash.com/photo-1509869175650-a1d97972541a?auto=format&fit=crop&q=80',
+    image: '/images/sliders/2.jpg',
   },
 ];
 
@@ -23,14 +24,14 @@ const banners = [
   {
     title: 'ثبت‌نام با تخفیف ویژه',
     description: 'تا پایان هفته از ۳۰٪ تخفیف بهره‌مند شوید',
-    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80',
+    image: '/images/sliders/3.jpg',
     buttonText: 'ثبت‌نام',
     buttonLink: '#register',
   },
   {
     title: 'دوره‌های آموزشی آنلاین',
     description: 'آموزش تکنیک‌های پیشرفته محاسبات ذهنی',
-    image: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80',
+    image: '/images/sliders/8.jpg',
     buttonText: 'مشاهده دوره‌ها',
     buttonLink: '#courses',
   },

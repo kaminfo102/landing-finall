@@ -45,7 +45,7 @@ export function PromoDialog() {
 
               <h2 className="text-2xl font-bold mb-4">پیشنهاد ویژه!</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                ثبت‌نام در دوره مقدماتی محاسبات ذهنی با ۳۰٪ تخفیف
+                ثبت‌نام در دوره مقدماتی محاسبات ذهنی با ۳۰٪ تخفیف شهریه
                 <br />
                 <span className="text-sm">فقط تا پایان این هفته</span>
               </p>
@@ -55,7 +55,7 @@ export function PromoDialog() {
                 className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 px-6 rounded-lg font-medium hover:opacity-90 transition-opacity"
                 onClick={() => setIsOpen(false)}
               >
-                ثبت‌نام با تخفیف
+                ثبت‌ نام با تخفیف
               </a>
             </div>
           </div>

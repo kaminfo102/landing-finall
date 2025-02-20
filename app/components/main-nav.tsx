@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 const menuItems = [
@@ -59,10 +60,16 @@ export function MainNav() {
               animate={{ rotate: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-              <Brain className="h-10 w-10 text-primary floating" />
+                  <Image 
+                    src="/images/logo/logo.jpg" 
+                    alt="Example Image" 
+                    width={100} 
+                    height={100} 
+                  />
+    
             </motion.div>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
-              مسابقه محاسبات ذهنی
+              استان کردستان
             </span>
           </div>
 
