@@ -40,7 +40,7 @@ const kurdistanCities = [
 
 export const   benefits = [
   {
-    id: 1,
+    
     icon: Lightbulb,
     title: 'تقویت حافظه',
     description: 'افزایش قدرت حافظه و تمرکز با تمرینات منظم و روش‌های علمی',
@@ -48,29 +48,29 @@ export const   benefits = [
     views: 1234,
     likes: 89,
     excerpt: "کاوش در اصول طراحی معاصر و تأثیر آن بر مناظر شهری...",
-    slug: "a1"  
+      
       
       
   },
   {
-    id: 2,
+    
     icon: Target,
     title: 'دقت بالا',
     description: 'پرورش دقت و سرعت عمل در محاسبات با تکنیک‌های پیشرفته',
     image: 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&q=80',
     views: 987,
     likes: 76,
-    slug: "a2"
+    
   },
   {
-    id: 3,
+    
     icon: Zap,
     title: 'تفکر خلاق',
     description: 'پرورش خلاقیت و مهارت‌های حل مسئله با روش‌های نوین',
     image: 'https://images.unsplash.com/photo-1492551557933-34265f7af79e?auto=format&fit=crop&q=80',
     views: 2156,
     likes: 143,
-    slug: "a3"
+    
   },
 ];
 

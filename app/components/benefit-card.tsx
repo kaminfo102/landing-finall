@@ -75,9 +75,9 @@ export function BenefitCard({ icon: Icon, title, description, image, views, like
          <Link 
          href={`/articles/`}
          className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
->
+          >
  
-</Link> 
+        </Link> 
 
          }>
           بیشتر بدانید
