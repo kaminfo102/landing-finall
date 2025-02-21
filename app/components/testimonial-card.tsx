@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
+import Image from 'next/image';
 
 interface TestimonialCardProps {
   content: string;
@@ -24,9 +25,11 @@ export function TestimonialCard({ content, name, role, image }: TestimonialCardP
       <div className="relative z-10">
         <div className="flex items-center gap-4 mb-6">
           <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20">
-            <img
+            <Image
               src={image}
               alt={name}
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
           </div>
@@ -37,9 +40,9 @@ export function TestimonialCard({ content, name, role, image }: TestimonialCardP
         </div>
         
         <p className="text-muted-foreground relative">
-          <span className="text-3xl text-primary/20 font-serif">"</span>
-          {content}
-          <span className="text-3xl text-primary/20 font-serif">"</span>
+          {/* <span className="text-3xl text-primary/20 font-serif">"</span>
+          {content} */}
+          {/* <span className="text-3xl text-primary/20 font-serif">"</span> */}
         </p>
       </div>
     </motion.div>

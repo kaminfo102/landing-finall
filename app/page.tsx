@@ -13,7 +13,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { HeroSlider } from './components/hero-slider';
-import { BenefitCard } from './components/benefit-card';
+import { BenefitCard, BenefitCardProps} from './components/benefit-card';
 import { TestimonialCard } from './components/testimonial-card';
 import { PromoDialog } from './components/promo-dialog';
 import { MainNav } from './components/main-nav';
@@ -38,16 +38,17 @@ const kurdistanCities = [
   'سروآباد'
 ];
 
-export const   benefits = [
+const benefits: BenefitCardProps[] = [
+  
   {
     
     icon: Lightbulb,
     title: 'تقویت حافظه',
     description: 'افزایش قدرت حافظه و تمرکز با تمرینات منظم و روش‌های علمی',
-    image: 'https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&q=80',
+    image: '/images/sliders/1.jpg?auto=format&fit=crop&q=80',
     views: 1234,
     likes: 89,
-    excerpt: "کاوش در اصول طراحی معاصر و تأثیر آن بر مناظر شهری...",
+   
       
       
       
@@ -57,7 +58,7 @@ export const   benefits = [
     icon: Target,
     title: 'دقت بالا',
     description: 'پرورش دقت و سرعت عمل در محاسبات با تکنیک‌های پیشرفته',
-    image: 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&q=80',
+    image: '/images/sliders/2.jpg',
     views: 987,
     likes: 76,
     
@@ -67,7 +68,7 @@ export const   benefits = [
     icon: Zap,
     title: 'تفکر خلاق',
     description: 'پرورش خلاقیت و مهارت‌های حل مسئله با روش‌های نوین',
-    image: 'https://images.unsplash.com/photo-1492551557933-34265f7af79e?auto=format&fit=crop&q=80',
+    image: '/images/sliders/3.jpg',
     views: 2156,
     likes: 143,
     
@@ -79,19 +80,19 @@ const testimonials = [
     name: 'سارا محمدی',
     role: 'مادر شرکت‌کننده',
     content: 'پس از شرکت در این مسابقات، اعتماد به نفس فرزندم در ریاضی به طور چشمگیری افزایش یافت.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80',
+    image: '/images/sliders/4.jpg',
   },
   {
     name: 'علی رضایی',
     role: 'دانش‌آموز',
     content: 'محیط رقابتی مسابقات باعث شد تا با انگیزه بیشتری تمرین کنم.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80',
+    image: '/images/sliders/5.jpg',
   },
   {
     name: 'مریم کریمی',
     role: 'معلم ریاضی',
     content: 'این مسابقات فرصت عالی برای کشف و پرورش استعدادهای ریاضی است.',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80',
+    image: '/images/sliders/6.jpg?auto=format&fit=crop&q=80',
   },
 ];
 
