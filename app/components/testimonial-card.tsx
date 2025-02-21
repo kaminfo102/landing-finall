@@ -40,9 +40,9 @@ export function TestimonialCard({ content, name, role, image }: TestimonialCardP
         </div>
         
         <p className="text-muted-foreground relative">
-          {/* <span className="text-3xl text-primary/20 font-serif">"</span>
-          {content} */}
-          {/* <span className="text-3xl text-primary/20 font-serif">"</span> */}
+          <span className="text-3xl text-primary/20 font-serif">"</span>
+          {content} 
+          <span className="text-3xl text-primary/20 font-serif">"</span>
         </p>
       </div>
     </motion.div>
